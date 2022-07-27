@@ -2,7 +2,9 @@ import './App.css'
 
 import Texte from './Texte';
 import Commuta from './Commuta';
-
+import Boles from './Boles'
+import Boles5 from './Boles5'
+import Comptador from './Comptador'
 
 
 
@@ -14,6 +16,9 @@ function App() {
       <h1>Hola que tal</h1>
       <Texte contingut={lorem} mida="12px"/>
       <Commuta  />
+      <Comptador />
+      <Boles />
+      <Boles5 />
     </>
   )
 }
