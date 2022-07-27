@@ -1,10 +1,9 @@
 import  React, {useState} from 'react';
 
-
-
-function Bola(){
+function Boles5(){
 
     const [actiu, setActiu] = useState(false);
+    
     
     function activa(){
         setActiu(true );
@@ -13,6 +12,7 @@ function Bola(){
     function desactiva(){
         setActiu(false );
     }
+
     let estils = {
         width: "40px",
         height: "40px",
@@ -32,10 +32,10 @@ function Bola(){
             <div style={estils}></div>
         </div>
      <button onClick={activa}>Activa</button>
-     <button onClick={desactiva}>Desactiva</button>
+     <button onClick={()=>setActiu(false)}>Desactiva</button>
         </>
     )
 }
 
 
-export default Bola;
+export default Boles5;

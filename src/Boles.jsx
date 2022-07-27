@@ -4,11 +4,11 @@ function Boles (){
 
     return (
         <div>
-        <Bola />
-        <Bola />
-        <Bola />
-        <Bola />
-        <Bola />
+            <Bola />
+            <Bola />
+            <Bola />
+            <Bola />
+            <Bola />
         </div>
     )
 }

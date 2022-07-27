@@ -2,16 +2,22 @@ import React, { useState } from 'react';
 
 
 
-function Comptador() {
+function Comptador(props) {
 
-    const [valor, setValor] = useState(0);
+    const [valor, setValor] = useState(props.min);
 
     function menys() {
-        setValor(valor-1);
+        if(valor>props.min){
+            setValor(valor-1);
+            props.funcio(valor-1)
+        }
     }
 
     function mes() {
-        setValor(valor+1);
+        if (valor<props.max){
+            setValor(valor+1);
+            props.funcio(valor+1)
+        }
     }
 
     const estilSpan = {
@@ -21,9 +27,9 @@ function Comptador() {
 
     return (
         <>
-            <button onClick={menys}>-</button>
+            <button disabled={valor==props.min}onClick={menys}>-</button>
             <span style={estilSpan}>{valor}</span>
-            <button onClick={mes}>+</button>
+            <button disabled={valor>=props.max} onClick={mes}>+</button>
         </>
     )
 }
