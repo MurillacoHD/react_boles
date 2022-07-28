@@ -13,7 +13,9 @@ function Commuta(){
     let estils = {
         width: "40px",
         height: "40px",
-        backgroundColor: actiu ? "green" : "red"
+        backgroundColor: actiu ? "orange" : "gray",
+        borderRadius: "50%",
+        display: "inline-block"
     }
 
     return (

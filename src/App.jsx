@@ -2,8 +2,9 @@ import './App.css'
 
 import Texte from './Texte';
 import Commuta from './Commuta';
-
-
+import Commuta_b from './Commuta_b';
+import Bola4 from './Bola4';
+import Bola5 from './Bola5';
 
 
 function App() {
@@ -13,7 +14,18 @@ function App() {
     <>
       <h1>Hola que tal</h1>
       <Texte contingut={lorem} mida="12px"/>
+      <h3>Exercici-l</h3>
       <Commuta  />
+      <Commuta  />
+      <Commuta  />
+      <Commuta  />
+      <Commuta  />
+      <h3>Exercici-1b</h3>
+      <Commuta_b  />
+      <h3>Exercici-4</h3>
+      <Bola4  />
+      <h3>Exercici-5</h3>
+      <Bola5  />
     </>
   )
 }
