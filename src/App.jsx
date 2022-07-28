@@ -1,3 +1,6 @@
+
+import { useState } from 'react';
+
 import './App.css'
 
 import Texte from './Texte';
@@ -9,6 +12,10 @@ import Bola5 from './Bola5';
 
 function App() {
   const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur et reprehenderit doloremque, nesciunt dicta ratione? Quam alias reiciendis totam architecto saepe nemo, perferendis voluptatem qui maxime temporibus officiis explicabo!";
+
+  const [index, setIndex] = useState(MIN);
+
+
 
   return (
     <>
